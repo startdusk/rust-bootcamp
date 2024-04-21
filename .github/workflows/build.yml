@@ -15,7 +15,7 @@ permissions:
 
 defaults:
   run:
-    working-directory: ['rcli']
+    working-directory: "rcli"
 
 jobs:
   build-rust:
