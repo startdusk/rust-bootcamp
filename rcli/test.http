@@ -1,0 +1,6 @@
+### Test index page
+
+GET http://localhost:8080/test.123
+
+### Test static file with tower-http
+GET http://localhost:8080/fixtures/b64.txt
