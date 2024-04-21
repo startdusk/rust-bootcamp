@@ -13,6 +13,10 @@ on:
 permissions:
   contents: write
 
+defaults:
+  run:
+    working-directory: ['rcli']
+
 jobs:
   build-rust:
     strategy:
