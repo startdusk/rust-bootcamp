@@ -41,3 +41,13 @@ generate:
 .PHONY: http
 http:
 	@RUST_LOG=info cargo run -- http serve
+
+.PHONY: jwtsign
+jwtsign:
+	@cargo run -- jwt sign --sub acme --aud device1 --exp 5d 
+
+
+.PHONY: jwtverify
+jwtverify:
+	@cargo run -- jwt verify --token 'xxx'
+
